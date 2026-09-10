@@ -1,0 +1,30 @@
+# Data — never commit dermatoscopic images or dataset archives
+data/
+*.zip
+*.tar.gz
+*.jpg
+*.jpeg
+*.png
+
+# Model artifacts
+*.pt
+*.pth
+*.onnx
+work/
+export/
+checkpoints/
+
+# Credentials — kaggle.json contains your API key
+kaggle.json
+.kaggle/
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
