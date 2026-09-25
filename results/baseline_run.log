@@ -1,0 +1,82 @@
+device: mps
+channel means: [0.764 0.546 0.571] | stds: [0.14  0.151 0.168]
+parameters: 1,175,015
+Melanocytic nevi                  5325 images   weight 0.05
+Melanoma                           883 images   weight 0.28
+Benign keratosis-like lesions      869 images   weight 0.29
+Basal cell carcinoma               409 images   weight 0.61
+Actinic keratoses                  265 images   weight 0.94
+Vascular lesions                   115 images   weight 2.16
+Dermatofibroma                      93 images   weight 2.67
+epoch  1/30 | train loss 2.2510 | val loss 3.1583 | acc 0.1163 | balanced acc 0.3161  <- best so far
+epoch  2/30 | train loss 2.1397 | val loss 3.0973 | acc 0.1759 | balanced acc 0.3320  <- best so far
+epoch  3/30 | train loss 2.0765 | val loss 2.9694 | acc 0.4085 | balanced acc 0.4121  <- best so far
+epoch  4/30 | train loss 1.9895 | val loss 3.1836 | acc 0.3478 | balanced acc 0.4649  <- best so far
+epoch  5/30 | train loss 1.9570 | val loss 3.2456 | acc 0.3377 | balanced acc 0.4722  <- best so far
+epoch  6/30 | train loss 1.9487 | val loss 2.9901 | acc 0.4934 | balanced acc 0.5081  <- best so far
+epoch  7/30 | train loss 1.9069 | val loss 3.0353 | acc 0.5308 | balanced acc 0.4129
+epoch  8/30 | train loss 1.8946 | val loss 2.8973 | acc 0.5652 | balanced acc 0.5094  <- best so far
+epoch  9/30 | train loss 1.8630 | val loss 3.0201 | acc 0.4540 | balanced acc 0.5480  <- best so far
+epoch 10/30 | train loss 1.8581 | val loss 2.9611 | acc 0.4884 | balanced acc 0.5173
+epoch 11/30 | train loss 1.8448 | val loss 3.0790 | acc 0.5268 | balanced acc 0.5488  <- best so far
+epoch 12/30 | train loss 1.8092 | val loss 2.9884 | acc 0.5147 | balanced acc 0.5310
+epoch 13/30 | train loss 1.8066 | val loss 3.0282 | acc 0.5005 | balanced acc 0.5444
+epoch 14/30 | train loss 1.8151 | val loss 2.9310 | acc 0.5592 | balanced acc 0.5509  <- best so far
+epoch 15/30 | train loss 1.7774 | val loss 2.9035 | acc 0.5672 | balanced acc 0.5714  <- best so far
+epoch 16/30 | train loss 1.7709 | val loss 2.9236 | acc 0.5612 | balanced acc 0.5827  <- best so far
+epoch 17/30 | train loss 1.7568 | val loss 2.9688 | acc 0.5875 | balanced acc 0.5658
+epoch 18/30 | train loss 1.7337 | val loss 2.8292 | acc 0.6107 | balanced acc 0.6408  <- best so far
+epoch 19/30 | train loss 1.7040 | val loss 2.9315 | acc 0.5966 | balanced acc 0.6099
+epoch 20/30 | train loss 1.6873 | val loss 2.9278 | acc 0.5490 | balanced acc 0.6243
+epoch 21/30 | train loss 1.6777 | val loss 2.8715 | acc 0.6077 | balanced acc 0.6710  <- best so far
+epoch 22/30 | train loss 1.6933 | val loss 2.8589 | acc 0.6218 | balanced acc 0.6819  <- best so far
+epoch 23/30 | train loss 1.6736 | val loss 2.7884 | acc 0.6320 | balanced acc 0.6643
+epoch 24/30 | train loss 1.6587 | val loss 2.8713 | acc 0.5976 | balanced acc 0.6889  <- best so far
+epoch 25/30 | train loss 1.6137 | val loss 2.8365 | acc 0.6289 | balanced acc 0.6641
+epoch 26/30 | train loss 1.6291 | val loss 2.8150 | acc 0.6229 | balanced acc 0.6919  <- best so far
+epoch 27/30 | train loss 1.6272 | val loss 2.8271 | acc 0.6158 | balanced acc 0.7030  <- best so far
+epoch 28/30 | train loss 1.6236 | val loss 2.8060 | acc 0.6188 | balanced acc 0.6953
+epoch 29/30 | train loss 1.6045 | val loss 2.7846 | acc 0.6309 | balanced acc 0.6992
+epoch 30/30 | train loss 1.5985 | val loss 2.8026 | acc 0.6239 | balanced acc 0.7015
+
+best validation balanced accuracy: 0.7030
+
+==============================================================
+test loss           : 2.8670
+accuracy            : 0.5921
+balanced accuracy   : 0.6429
+macro F1            : 0.4612
+weighted F1         : 0.6360
+Cohen's kappa       : 0.4036
+macro ROC-AUC (ovr) : 0.8933
+
+                                precision    recall  f1-score   support
+
+              Melanocytic nevi      0.971     0.595     0.738       669
+                      Melanoma      0.293     0.647     0.403       116
+Benign keratosis-like lesions       0.522     0.423     0.468       111
+          Basal cell carcinoma      0.430     0.618     0.507        55
+             Actinic keratoses      0.258     0.750     0.384        32
+              Vascular lesions      0.310     0.929     0.464        14
+                Dermatofibroma      0.175     0.538     0.264        13
+
+                      accuracy                          0.592      1010
+                     macro avg      0.423     0.643     0.461      1010
+                  weighted avg      0.772     0.592     0.636      1010
+
+confusion matrix (rows = true, cols = predicted):
+Melanocytic nevi                   398   156    23    20    25    18    29
+Melanoma                             5    75    17     6     8     3     2
+Benign keratosis-like lesions        7    19    47    12    23     2     1
+Basal cell carcinoma                 0     2     1    34    12     6     0
+Actinic keratoses                    0     1     1     5    24     0     1
+Vascular lesions                     0     1     0     0     0    13     0
+Dermatofibroma                       0     2     1     2     1     0     7
+
+malignant/pre-malignant vs benign (collapsed to 2 classes)
+  sensitivity (recall) : 0.8227   (167/203)
+  specificity          : 0.6766   (546/807)
+  ROC-AUC              : 0.8580
+  melanoma missed as benign: 27 of 116
+
+saved skin_cnn.pt and results.json

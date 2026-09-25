@@ -89,9 +89,34 @@ splitting hold.
 ```
 notebooks/skin_cancer_cnn_pytorch.py      source of truth (percent format)
 notebooks/skin_cancer_cnn_pytorch.ipynb   generated — this is the Colab notebook
+notebooks/Skin_Cancer_HAM10000.ipynb      HAM10000-only study (see below)
+ham10000_cnn/                             scripts for that study
+results/                                  run logs and metric dumps
 tools/py_to_ipynb.py                      .py -> .ipynb converter
 tools/smoke_test.py                       end-to-end synthetic-data test
 ```
+
+## A second, smaller study: HAM10000 only
+
+**→ [`ham10000_cnn/`](ham10000_cnn/)**
+
+A controlled before/after on a 7-class HAM10000 classifier, run end to end on an M-series
+laptop rather than Colab. Same data, same lesion-grouped split and same seed on both sides,
+so every metric difference traces to a named change.
+
+| Metric | Baseline | Tuned |
+|---|---|---|
+| Accuracy | 0.592 | **0.717** |
+| Macro F1 | 0.461 | **0.584** |
+| Cohen's kappa | 0.404 | **0.529** |
+| Macro ROC-AUC | 0.893 | **0.939** |
+| Malignant sensitivity / specificity | 0.823 / 0.677 | **0.847 / 0.786** |
+
+Most of the gain came from three things: training at 128×128 instead of 71×71, replacing
+raw inverse-frequency class weights (a 53× spread that inverted the imbalance rather than
+correcting it) with their square root, and selecting the best epoch on macro F1 rather than
+balanced accuracy. Full reasoning, per-class numbers and the trade-offs are in the
+[study README](ham10000_cnn/README.md).
 
 ## Disclaimer
 
