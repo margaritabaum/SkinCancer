@@ -1,0 +1,213 @@
+metadata features: 19 (age_z, sex_female, sex_male, sex_unknown, loc_abdomen, ...)
+device: mps | resolution: 128 | seeds: [1, 2, 3]
+channel means: [0.765 0.548 0.574] | stds: [0.138 0.15  0.166]
+parameters: 4,723,725
+seed 1 | epoch  1/50 | train loss 1.7623 | val acc 0.6673 | macroF1 0.2832  <- best
+seed 1 | epoch  2/50 | train loss 1.5962 | val acc 0.5915 | macroF1 0.2982  <- best
+seed 1 | epoch  3/50 | train loss 1.5650 | val acc 0.7209 | macroF1 0.3368  <- best
+seed 1 | epoch  4/50 | train loss 1.5373 | val acc 0.6896 | macroF1 0.3633  <- best
+seed 1 | epoch  5/50 | train loss 1.5258 | val acc 0.7017 | macroF1 0.4513  <- best
+seed 1 | epoch  6/50 | train loss 1.4887 | val acc 0.6309 | macroF1 0.3876
+seed 1 | epoch  7/50 | train loss 1.4986 | val acc 0.7472 | macroF1 0.4734  <- best
+seed 1 | epoch  8/50 | train loss 1.4764 | val acc 0.6997 | macroF1 0.4436
+seed 1 | epoch  9/50 | train loss 1.4704 | val acc 0.7108 | macroF1 0.4650
+seed 1 | epoch 10/50 | train loss 1.4597 | val acc 0.6694 | macroF1 0.4668
+seed 1 | epoch 11/50 | train loss 1.4379 | val acc 0.6805 | macroF1 0.4448
+seed 1 | epoch 12/50 | train loss 1.4325 | val acc 0.7503 | macroF1 0.5124  <- best
+seed 1 | epoch 13/50 | train loss 1.4206 | val acc 0.7209 | macroF1 0.4817
+seed 1 | epoch 14/50 | train loss 1.4074 | val acc 0.7523 | macroF1 0.5246  <- best
+seed 1 | epoch 15/50 | train loss 1.3942 | val acc 0.6977 | macroF1 0.4968
+seed 1 | epoch 16/50 | train loss 1.3872 | val acc 0.7300 | macroF1 0.5015
+seed 1 | epoch 17/50 | train loss 1.3691 | val acc 0.7401 | macroF1 0.5437  <- best
+seed 1 | epoch 18/50 | train loss 1.3641 | val acc 0.7503 | macroF1 0.5297
+seed 1 | epoch 19/50 | train loss 1.3507 | val acc 0.7381 | macroF1 0.5320
+seed 1 | epoch 20/50 | train loss 1.3534 | val acc 0.7624 | macroF1 0.5426
+seed 1 | epoch 21/50 | train loss 1.3381 | val acc 0.7523 | macroF1 0.5387
+seed 1 | epoch 22/50 | train loss 1.3201 | val acc 0.7391 | macroF1 0.5049
+seed 1 | epoch 23/50 | train loss 1.3068 | val acc 0.7583 | macroF1 0.5730  <- best
+seed 1 | epoch 24/50 | train loss 1.3168 | val acc 0.7513 | macroF1 0.5622
+seed 1 | epoch 25/50 | train loss 1.3110 | val acc 0.7624 | macroF1 0.4868
+seed 1 | epoch 26/50 | train loss 1.2922 | val acc 0.7715 | macroF1 0.5771  <- best
+seed 1 | epoch 27/50 | train loss 1.2887 | val acc 0.7361 | macroF1 0.5573
+seed 1 | epoch 28/50 | train loss 1.2809 | val acc 0.7755 | macroF1 0.5683
+seed 1 | epoch 29/50 | train loss 1.2680 | val acc 0.7735 | macroF1 0.5803  <- best
+seed 1 | epoch 30/50 | train loss 1.2717 | val acc 0.7745 | macroF1 0.5760
+seed 1 | epoch 31/50 | train loss 1.2538 | val acc 0.7664 | macroF1 0.5996  <- best
+seed 1 | epoch 32/50 | train loss 1.2579 | val acc 0.7371 | macroF1 0.5627
+seed 1 | epoch 33/50 | train loss 1.2444 | val acc 0.7674 | macroF1 0.5801
+seed 1 | epoch 34/50 | train loss 1.2421 | val acc 0.7685 | macroF1 0.5735
+seed 1 | epoch 35/50 | train loss 1.2253 | val acc 0.7836 | macroF1 0.6175  <- best
+seed 1 | epoch 36/50 | train loss 1.2229 | val acc 0.7624 | macroF1 0.5923
+seed 1 | epoch 37/50 | train loss 1.2242 | val acc 0.7786 | macroF1 0.5812
+seed 1 | epoch 38/50 | train loss 1.2138 | val acc 0.7695 | macroF1 0.6039
+seed 1 | epoch 39/50 | train loss 1.2143 | val acc 0.7634 | macroF1 0.5522
+seed 1 | epoch 40/50 | train loss 1.2010 | val acc 0.7695 | macroF1 0.5761
+seed 1 | epoch 41/50 | train loss 1.2000 | val acc 0.7776 | macroF1 0.5812
+seed 1 | epoch 42/50 | train loss 1.1915 | val acc 0.7695 | macroF1 0.5773
+seed 1 | epoch 43/50 | train loss 1.1920 | val acc 0.7867 | macroF1 0.6008
+seed 1 | epoch 44/50 | train loss 1.1885 | val acc 0.7735 | macroF1 0.5657
+seed 1 | epoch 45/50 | train loss 1.1880 | val acc 0.7937 | macroF1 0.5961
+seed 1 | epoch 46/50 | train loss 1.1792 | val acc 0.7816 | macroF1 0.5886
+seed 1 | epoch 47/50 | train loss 1.1734 | val acc 0.7836 | macroF1 0.5998
+seed 1 | early stop at epoch 47
+
+seed 1 done | best val macroF1 0.6175 | test acc (TTA) 0.7594
+
+seed 2 | epoch  1/50 | train loss 1.7571 | val acc 0.6704 | macroF1 0.3129  <- best
+seed 2 | epoch  2/50 | train loss 1.5860 | val acc 0.7280 | macroF1 0.4567  <- best
+seed 2 | epoch  3/50 | train loss 1.5431 | val acc 0.7260 | macroF1 0.4040
+seed 2 | epoch  4/50 | train loss 1.5233 | val acc 0.6593 | macroF1 0.3621
+seed 2 | epoch  5/50 | train loss 1.5040 | val acc 0.6724 | macroF1 0.4234
+seed 2 | epoch  6/50 | train loss 1.4802 | val acc 0.7159 | macroF1 0.4540
+seed 2 | epoch  7/50 | train loss 1.4737 | val acc 0.7280 | macroF1 0.4978  <- best
+seed 2 | epoch  8/50 | train loss 1.4515 | val acc 0.6926 | macroF1 0.5026  <- best
+seed 2 | epoch  9/50 | train loss 1.4492 | val acc 0.7523 | macroF1 0.4202
+seed 2 | epoch 10/50 | train loss 1.4713 | val acc 0.6542 | macroF1 0.4358
+seed 2 | epoch 11/50 | train loss 1.5101 | val acc 0.6936 | macroF1 0.4271
+seed 2 | epoch 12/50 | train loss 1.5039 | val acc 0.7179 | macroF1 0.4406
+seed 2 | epoch 13/50 | train loss 1.4811 | val acc 0.6785 | macroF1 0.4473
+seed 2 | epoch 14/50 | train loss 1.4568 | val acc 0.7088 | macroF1 0.4805
+seed 2 | epoch 15/50 | train loss 1.4376 | val acc 0.7462 | macroF1 0.4790
+seed 2 | epoch 16/50 | train loss 1.4193 | val acc 0.7270 | macroF1 0.5039  <- best
+seed 2 | epoch 17/50 | train loss 1.4056 | val acc 0.7300 | macroF1 0.4522
+seed 2 | epoch 18/50 | train loss 1.3992 | val acc 0.7321 | macroF1 0.4757
+seed 2 | epoch 19/50 | train loss 1.3851 | val acc 0.6603 | macroF1 0.4851
+seed 2 | epoch 20/50 | train loss 1.3647 | val acc 0.7381 | macroF1 0.4490
+seed 2 | epoch 21/50 | train loss 1.3479 | val acc 0.7230 | macroF1 0.5464  <- best
+seed 2 | epoch 22/50 | train loss 1.3380 | val acc 0.7614 | macroF1 0.5445
+seed 2 | epoch 23/50 | train loss 1.3218 | val acc 0.7796 | macroF1 0.5812  <- best
+seed 2 | epoch 24/50 | train loss 1.3214 | val acc 0.7442 | macroF1 0.5596
+seed 2 | epoch 25/50 | train loss 1.3118 | val acc 0.7634 | macroF1 0.5813  <- best
+seed 2 | epoch 26/50 | train loss 1.3119 | val acc 0.7462 | macroF1 0.5398
+seed 2 | epoch 27/50 | train loss 1.2904 | val acc 0.7745 | macroF1 0.6133  <- best
+seed 2 | epoch 28/50 | train loss 1.2904 | val acc 0.7412 | macroF1 0.5660
+seed 2 | epoch 29/50 | train loss 1.2743 | val acc 0.7644 | macroF1 0.5834
+seed 2 | epoch 30/50 | train loss 1.2826 | val acc 0.7482 | macroF1 0.5788
+seed 2 | epoch 31/50 | train loss 1.2633 | val acc 0.7492 | macroF1 0.6039
+seed 2 | epoch 32/50 | train loss 1.2566 | val acc 0.7998 | macroF1 0.6314  <- best
+seed 2 | epoch 33/50 | train loss 1.2450 | val acc 0.7654 | macroF1 0.5831
+seed 2 | epoch 34/50 | train loss 1.2410 | val acc 0.7583 | macroF1 0.5900
+seed 2 | epoch 35/50 | train loss 1.2361 | val acc 0.7786 | macroF1 0.6304
+seed 2 | epoch 36/50 | train loss 1.2358 | val acc 0.7492 | macroF1 0.5912
+seed 2 | epoch 37/50 | train loss 1.2189 | val acc 0.7776 | macroF1 0.6269
+seed 2 | epoch 38/50 | train loss 1.2149 | val acc 0.7654 | macroF1 0.5982
+seed 2 | epoch 39/50 | train loss 1.1972 | val acc 0.7654 | macroF1 0.6167
+seed 2 | epoch 40/50 | train loss 1.1984 | val acc 0.7856 | macroF1 0.6071
+seed 2 | epoch 41/50 | train loss 1.1923 | val acc 0.7877 | macroF1 0.6409  <- best
+seed 2 | epoch 42/50 | train loss 1.1927 | val acc 0.7776 | macroF1 0.6071
+seed 2 | epoch 43/50 | train loss 1.1803 | val acc 0.7634 | macroF1 0.6240
+seed 2 | epoch 44/50 | train loss 1.1770 | val acc 0.7745 | macroF1 0.6212
+seed 2 | epoch 45/50 | train loss 1.1817 | val acc 0.7765 | macroF1 0.6184
+seed 2 | epoch 46/50 | train loss 1.1832 | val acc 0.7796 | macroF1 0.6302
+seed 2 | epoch 47/50 | train loss 1.1806 | val acc 0.7695 | macroF1 0.6107
+seed 2 | epoch 48/50 | train loss 1.1749 | val acc 0.7695 | macroF1 0.6036
+seed 2 | epoch 49/50 | train loss 1.1682 | val acc 0.7705 | macroF1 0.6103
+seed 2 | epoch 50/50 | train loss 1.1739 | val acc 0.7765 | macroF1 0.6328
+
+seed 2 done | best val macroF1 0.6409 | test acc (TTA) 0.7663
+
+seed 3 | epoch  1/50 | train loss 1.7546 | val acc 0.7007 | macroF1 0.2543  <- best
+seed 3 | epoch  2/50 | train loss 1.6071 | val acc 0.6835 | macroF1 0.3266  <- best
+seed 3 | epoch  3/50 | train loss 1.5798 | val acc 0.6835 | macroF1 0.3428  <- best
+seed 3 | epoch  4/50 | train loss 1.5510 | val acc 0.6886 | macroF1 0.3451  <- best
+seed 3 | epoch  5/50 | train loss 1.5319 | val acc 0.7078 | macroF1 0.3955  <- best
+seed 3 | epoch  6/50 | train loss 1.5134 | val acc 0.7118 | macroF1 0.3824
+seed 3 | epoch  7/50 | train loss 1.5010 | val acc 0.7331 | macroF1 0.4868  <- best
+seed 3 | epoch  8/50 | train loss 1.4848 | val acc 0.7179 | macroF1 0.4772
+seed 3 | epoch  9/50 | train loss 1.4776 | val acc 0.7280 | macroF1 0.4836
+seed 3 | epoch 10/50 | train loss 1.4734 | val acc 0.6936 | macroF1 0.4273
+seed 3 | epoch 11/50 | train loss 1.5004 | val acc 0.6603 | macroF1 0.3882
+seed 3 | epoch 12/50 | train loss 1.5680 | val acc 0.6673 | macroF1 0.4137
+seed 3 | epoch 13/50 | train loss 1.5220 | val acc 0.6411 | macroF1 0.3865
+seed 3 | epoch 14/50 | train loss 1.5024 | val acc 0.7108 | macroF1 0.4328
+seed 3 | epoch 15/50 | train loss 1.4812 | val acc 0.6946 | macroF1 0.4134
+seed 3 | epoch 16/50 | train loss 1.4642 | val acc 0.7381 | macroF1 0.5156  <- best
+seed 3 | epoch 17/50 | train loss 1.4280 | val acc 0.7300 | macroF1 0.5290  <- best
+seed 3 | epoch 18/50 | train loss 1.4198 | val acc 0.7310 | macroF1 0.4848
+seed 3 | epoch 19/50 | train loss 1.3952 | val acc 0.7533 | macroF1 0.5100
+seed 3 | epoch 20/50 | train loss 1.3800 | val acc 0.7472 | macroF1 0.5248
+seed 3 | epoch 21/50 | train loss 1.3835 | val acc 0.7341 | macroF1 0.5235
+seed 3 | epoch 22/50 | train loss 1.3660 | val acc 0.7725 | macroF1 0.5525  <- best
+seed 3 | epoch 23/50 | train loss 1.3589 | val acc 0.7674 | macroF1 0.5839  <- best
+seed 3 | epoch 24/50 | train loss 1.3371 | val acc 0.7664 | macroF1 0.5621
+seed 3 | epoch 25/50 | train loss 1.3332 | val acc 0.7563 | macroF1 0.5678
+seed 3 | epoch 26/50 | train loss 1.3303 | val acc 0.7685 | macroF1 0.5720
+seed 3 | epoch 27/50 | train loss 1.3076 | val acc 0.7755 | macroF1 0.5983  <- best
+seed 3 | epoch 28/50 | train loss 1.3078 | val acc 0.7846 | macroF1 0.5985  <- best
+seed 3 | epoch 29/50 | train loss 1.3073 | val acc 0.7624 | macroF1 0.5861
+seed 3 | epoch 30/50 | train loss 1.2967 | val acc 0.7674 | macroF1 0.5705
+seed 3 | epoch 31/50 | train loss 1.2862 | val acc 0.7705 | macroF1 0.5732
+seed 3 | epoch 32/50 | train loss 1.2721 | val acc 0.7826 | macroF1 0.5796
+seed 3 | epoch 33/50 | train loss 1.2749 | val acc 0.7846 | macroF1 0.5968
+seed 3 | epoch 34/50 | train loss 1.2542 | val acc 0.7765 | macroF1 0.5832
+seed 3 | epoch 35/50 | train loss 1.2624 | val acc 0.7705 | macroF1 0.5859
+seed 3 | epoch 36/50 | train loss 1.2502 | val acc 0.7786 | macroF1 0.5718
+seed 3 | epoch 37/50 | train loss 1.2384 | val acc 0.7937 | macroF1 0.5826
+seed 3 | epoch 38/50 | train loss 1.2277 | val acc 0.7947 | macroF1 0.6119  <- best
+seed 3 | epoch 39/50 | train loss 1.2258 | val acc 0.8018 | macroF1 0.6276  <- best
+seed 3 | epoch 40/50 | train loss 1.2197 | val acc 0.7927 | macroF1 0.6243
+seed 3 | epoch 41/50 | train loss 1.2117 | val acc 0.7937 | macroF1 0.6200
+seed 3 | epoch 42/50 | train loss 1.2042 | val acc 0.8008 | macroF1 0.6295  <- best
+seed 3 | epoch 43/50 | train loss 1.2040 | val acc 0.8038 | macroF1 0.6313  <- best
+seed 3 | epoch 44/50 | train loss 1.2049 | val acc 0.8049 | macroF1 0.6299
+seed 3 | epoch 45/50 | train loss 1.1922 | val acc 0.7978 | macroF1 0.6247
+seed 3 | epoch 46/50 | train loss 1.1933 | val acc 0.8038 | macroF1 0.6250
+seed 3 | epoch 47/50 | train loss 1.1936 | val acc 0.8059 | macroF1 0.6325  <- best
+seed 3 | epoch 48/50 | train loss 1.1901 | val acc 0.8049 | macroF1 0.6205
+seed 3 | epoch 49/50 | train loss 1.1896 | val acc 0.8059 | macroF1 0.6417  <- best
+seed 3 | epoch 50/50 | train loss 1.1846 | val acc 0.7988 | macroF1 0.6285
+
+seed 3 done | best val macroF1 0.6417 | test acc (TTA) 0.7950
+
+
+per-seed test accuracy (TTA):
+  seed 1: 0.7594   (best val macroF1 0.6175)
+  seed 2: 0.7663   (best val macroF1 0.6409)
+  seed 3: 0.7950   (best val macroF1 0.6417)
+
+================================================================
+TEST - ensemble of 3 seeds, + TTA
+  accuracy          : 0.7881
+  balanced accuracy : 0.6419
+  macro F1          : 0.6206
+  weighted F1       : 0.7959
+  Cohen's kappa     : 0.6209
+  macro ROC-AUC     : 0.9534
+  malignant sensitivity: 0.7635  specificity: 0.8724
+  melanomas called benign: 29 of 116
+
+================================================================
+TEST - ensemble + TTA + per-lesion pooling
+  accuracy          : 0.7812
+  balanced accuracy : 0.6304
+  macro F1          : 0.6136
+  weighted F1       : 0.7886
+  Cohen's kappa     : 0.6074
+  macro ROC-AUC     : 0.9595
+  malignant sensitivity: 0.7734  specificity: 0.8649
+  melanomas called benign: 30 of 116
+
+                                precision    recall  f1-score   support
+
+              Melanocytic nevi      0.932     0.867     0.899       669
+                      Melanoma      0.475     0.733     0.576       116
+Benign keratosis-like lesions       0.609     0.505     0.552       111
+          Basal cell carcinoma      0.603     0.636     0.619        55
+             Actinic keratoses      0.621     0.562     0.590        32
+              Vascular lesions      0.615     0.571     0.593        14
+                Dermatofibroma      0.412     0.538     0.467        13
+
+                      accuracy                          0.781      1010
+                     macro avg      0.610     0.630     0.614      1010
+                  weighted avg      0.805     0.781     0.789      1010
+
+confusion matrix (rows = true, cols = predicted):
+Melanocytic nevi                   580    63    14     6     0     3     3
+Melanoma                            19    85    11     0     1     0     0
+Benign keratosis-like lesions       18    19    56    11     2     2     3
+Basal cell carcinoma                 2     4     4    35     8     0     2
+Actinic keratoses                    1     1     5     5    18     0     2
+Vascular lesions                     2     4     0     0     0     8     0
+Dermatofibroma                       0     3     2     1     0     0     7
+
+saved results_v3.json

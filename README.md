@@ -104,19 +104,21 @@ A controlled before/after on a 7-class HAM10000 classifier, run end to end on an
 laptop rather than Colab. Same data, same lesion-grouped split and same seed on both sides,
 so every metric difference traces to a named change.
 
-| Metric | Baseline | Tuned |
-|---|---|---|
-| Accuracy | 0.592 | **0.717** |
-| Macro F1 | 0.461 | **0.584** |
-| Cohen's kappa | 0.404 | **0.529** |
-| Macro ROC-AUC | 0.893 | **0.939** |
-| Malignant sensitivity / specificity | 0.823 / 0.677 | **0.847 / 0.786** |
+| Metric | Baseline | Tuned | + metadata & ensemble |
+|---|---|---|---|
+| Accuracy | 0.592 | 0.717 | **0.788** |
+| Macro F1 | 0.461 | 0.584 | **0.621** |
+| Cohen's kappa | 0.404 | 0.529 | **0.621** |
+| Macro ROC-AUC | 0.893 | 0.939 | **0.953** |
+| Malignant sensitivity / specificity | 0.823 / 0.677 | 0.847 / 0.786 | 0.764 / **0.872** |
 
 Most of the gain came from three things: training at 128×128 instead of 71×71, replacing
 raw inverse-frequency class weights (a 53× spread that inverted the imbalance rather than
 correcting it) with their square root, and selecting the best epoch on macro F1 rather than
-balanced accuracy. Full reasoning, per-class numbers and the trade-offs are in the
-[study README](ham10000_cnn/README.md).
+balanced accuracy. Feeding the unused `age`/`sex`/`localization` metadata through a second
+branch and ensembling three seeds took it the rest of the way. Note that malignant
+*sensitivity* regressed in that last step — full reasoning, per-class numbers and the
+trade-offs are in the [study README](ham10000_cnn/README.md).
 
 ## Disclaimer
 

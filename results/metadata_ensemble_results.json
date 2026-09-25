@@ -1,0 +1,106 @@
+{
+  "seeds": [
+    {
+      "seed": 1,
+      "val_macro_f1": 0.6175298842663487,
+      "test_acc_tta": 0.7594059405940594
+    },
+    {
+      "seed": 2,
+      "val_macro_f1": 0.64094447358798,
+      "test_acc_tta": 0.7663366336633664
+    },
+    {
+      "seed": 3,
+      "val_macro_f1": 0.6417148756290496,
+      "test_acc_tta": 0.7950495049504951
+    }
+  ],
+  "ensemble_pooled_accuracy": 0.7811881188118812,
+  "confusion_matrix": [
+    [
+      580,
+      63,
+      14,
+      6,
+      0,
+      3,
+      3
+    ],
+    [
+      19,
+      85,
+      11,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      18,
+      19,
+      56,
+      11,
+      2,
+      2,
+      3
+    ],
+    [
+      2,
+      4,
+      4,
+      35,
+      8,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      5,
+      5,
+      18,
+      0,
+      2
+    ],
+    [
+      2,
+      4,
+      0,
+      0,
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      3,
+      2,
+      1,
+      0,
+      0,
+      7
+    ]
+  ],
+  "meta_cols": [
+    "age_z",
+    "sex_female",
+    "sex_male",
+    "sex_unknown",
+    "loc_abdomen",
+    "loc_acral",
+    "loc_back",
+    "loc_chest",
+    "loc_ear",
+    "loc_face",
+    "loc_foot",
+    "loc_genital",
+    "loc_hand",
+    "loc_lower extremity",
+    "loc_neck",
+    "loc_scalp",
+    "loc_trunk",
+    "loc_unknown",
+    "loc_upper extremity"
+  ]
+}
